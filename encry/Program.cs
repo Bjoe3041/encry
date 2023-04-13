@@ -11,10 +11,18 @@ internal class Program
     private static void Main(string[] args)
     {
         VBGG_CRYPT vBGG_CRYPT= new VBGG_CRYPT();
-        
-        string input = "Eating chips wow";
-        string key = "haha";
-        
+
+        //string input = "Eating chips wow";
+        //string key = "haha";
+
+        Console.WriteLine("Write input data");
+        string input = Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Input data: "+input);
+        Console.WriteLine("Write encryption key");
+        string key = Console.ReadLine();
+        Console.Clear();
+
         string encrypted;
         string encoded;
         string decoded;
@@ -32,6 +40,7 @@ internal class Program
         Console.WriteLine("Encoded, data is now:   ("+encoded+")");
         Console.WriteLine("Decoded, data is now:   ("+decoded+")");
         Console.WriteLine("Decrypted, data is now: ("+decrypted + ")  with key: (" + key+")");
-
+        
+        Console.ReadLine();
     }
 }
