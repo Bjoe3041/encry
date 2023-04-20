@@ -41,24 +41,16 @@ internal class Program
         Console.WriteLine("Decoded, data is now:   ("+decoded+")");
         Console.WriteLine("Decrypted, data is now: ("+decrypted + ")  with key: (" + key+")");
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Console.WriteLine("");
+
+        /*Console.WriteLine("");
         Console.WriteLine("Attempt alternate decryption key: ");
         string altKey = Console.ReadLine();
 
         encrypted = vBGG_CRYPT.VBGG_ENCRYPT(input, key);
         encoded = vBGG_CRYPT.AsciiEncode(encrypted);
         decoded = vBGG_CRYPT.AsciiDecode(encoded);
-        decrypted = vBGG_CRYPT.VBGG_DECRYPT(decoded, altKey);
+        decrypted = vBGG_CRYPT.VBGG_DECRYPT(decoded, key);
+        string decrypted2 = vBGG_CRYPT.VBGG_DECRYPT(decoded, altKey);
 
         Console.WriteLine("Input:     " + input);
         Console.WriteLine("Key:       " + key + "\n");
@@ -67,7 +59,12 @@ internal class Program
         Console.WriteLine("Encrypted, data is now: (" + encrypted + ")  with key: (" + key + ")");
         Console.WriteLine("Encoded, data is now:   (" + encoded + ")");
         Console.WriteLine("Decoded, data is now:   (" + decoded + ")");
-        Console.WriteLine("Decrypted, data is now: (" + decrypted + ")  with key: (" + altKey + ")");
+        Console.WriteLine("Decrypted, data is now: (" + decrypted2 + ")  with key: (" + altKey + ")");
+        Console.WriteLine("Decrypted, data is now: (" + decrypted + ")  with key: (" + key + ")");*/
+
+        Console.WriteLine(VBGG_CRYPT.DecryptRailFence("Ta _7N6D8Dhlg:W3D_H3C31N__387ef sHR053F38N43DFD i33___N6", 4));
+
+
 
     }
 }
